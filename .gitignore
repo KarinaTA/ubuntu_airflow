@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+env/
+.venv/
+venv/
+lib/
+include/
+bin/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.bak
+*.swo
+
+# Airflow-specific files
+airflow.cfg
+unittests.cfg
+webserver_config.pyc
+dags/__pycache__
+airflow.db
+
+# Logs and temporary files
+logs/
+temp/
+tmp/
+*.log
+*.sqlite
+.DS_Store
+
+# Virtual environment (usually in the project root)
+/venv/
+.venv/
+
+# Environment variables
+.env
+.flaskenv
