@@ -11,7 +11,7 @@ default_args={
 }
 
 with DAG(
-    dag_id='my_first_dag_v2',
+    dag_id='my_first_dag_v3',
     description='This is my first dag that I wrote',
     default_args=default_args,
     start_date=datetime(2025, 8, 28, 17),
@@ -37,5 +37,8 @@ with DAG(
     )
     
     # Task dependancy method 1 
-    task_1 >> task_2
-    task_1 >> task_3
+    # task_1 >> task_2
+    # task_1 >> task_3
+    
+    # Task dependancy method 2
+    task_1 >> [task_2, task_3]
