@@ -11,9 +11,10 @@ args = {
 
 with DAG(
     default_args=args,
-    dag_id='dag_cron_expression_v02',
-    start_date=datetime(2025, 8, 25),
-    schedule='0 0 * * *'
+    dag_id='dag_cron_expression_v04',
+    start_date=datetime(2025, 8, 18),
+    schedule='0 3 * * Tue-Fri',
+    catchup=True
     ) as dag:
     task1 = BashOperator(
         task_id='task1',
